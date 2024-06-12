@@ -1,0 +1,148 @@
+[world]
+kind = "WorldContract"
+class_hash = "0xf6f44afb3cacbcc01a371aff62c86ca9a45feba065424c99f7cd8637514d8f"
+original_class_hash = "0xf6f44afb3cacbcc01a371aff62c86ca9a45feba065424c99f7cd8637514d8f"
+abi = "manifests/dev/abis/deployments/dojo_world_world.json"
+address = "0x559e9e223d83b6a3121ba33b1339323a3bdf4c7c302078fb3e755fddc68a2fb"
+transaction_hash = "0x426a655abad7f218400696f9138ef551e2371bdf934f70103b9bd61958e982d"
+block_number = 3
+seed = "dojo_starter"
+name = "dojo::world::world"
+
+[world.metadata]
+profile_name = "dev"
+rpc_url = "http://localhost:5050/"
+
+[base]
+kind = "Class"
+class_hash = "0x22f3e55b61d86c2ac5239fa3b3b8761f26b9a5c0b5f61ddbd5d756ced498b46"
+original_class_hash = "0x22f3e55b61d86c2ac5239fa3b3b8761f26b9a5c0b5f61ddbd5d756ced498b46"
+name = "dojo::base::base"
+
+[[contracts]]
+kind = "DojoContract"
+address = "0xe3dd66537d069719eba8f3d1ba5ba09872536deffa61f942cf7f862e58ac21"
+class_hash = "0x15b5453db91491d08ddf615315fc136dd64ecb259f6b7f005d1f4e6a19bdb11"
+original_class_hash = "0x15b5453db91491d08ddf615315fc136dd64ecb259f6b7f005d1f4e6a19bdb11"
+base_class_hash = "0x22f3e55b61d86c2ac5239fa3b3b8761f26b9a5c0b5f61ddbd5d756ced498b46"
+abi = "manifests/dev/abis/deployments/contracts/dojo_starter_systems_actions_actions.json"
+reads = []
+writes = []
+computed = []
+init_calldata = []
+name = "dojo_starter::systems::actions::actions"
+
+[[models]]
+kind = "DojoModel"
+class_hash = "0x20e4c0cb03c44bc73e2b5a3841119b8d18a650665ca5add8939d8d8720fe0a7"
+original_class_hash = "0x20e4c0cb03c44bc73e2b5a3841119b8d18a650665ca5add8939d8d8720fe0a7"
+abi = "manifests/dev/abis/deployments/models/dojo_starter_models_counter_counter.json"
+name = "dojo_starter::models::counter::counter"
+
+[[models.members]]
+name = "entityId"
+type = "u32"
+key = true
+
+[[models.members]]
+name = "counter"
+type = "u32"
+key = false
+
+[[models]]
+kind = "DojoModel"
+class_hash = "0x7a70751131ee5573719d7ea70fa1ac8cbec1f213b835aa300ed0869ff1e080c"
+original_class_hash = "0x7a70751131ee5573719d7ea70fa1ac8cbec1f213b835aa300ed0869ff1e080c"
+abi = "manifests/dev/abis/deployments/models/dojo_starter_models_game_game.json"
+name = "dojo_starter::models::game::game"
+
+[[models.members]]
+name = "player"
+type = "ContractAddress"
+key = true
+
+[[models.members]]
+name = "entityId"
+type = "u32"
+key = false
+
+[[models.members]]
+name = "status"
+type = "GameStatus"
+key = false
+
+[[models]]
+kind = "DojoModel"
+class_hash = "0x48af75d0b7fd9d4165c957d18fc12f63106bd91a306a8325cdd660358756e90"
+original_class_hash = "0x48af75d0b7fd9d4165c957d18fc12f63106bd91a306a8325cdd660358756e90"
+abi = "manifests/dev/abis/deployments/models/dojo_starter_models_health_health.json"
+name = "dojo_starter::models::health::health"
+
+[[models.members]]
+name = "entityId"
+type = "ContractAddress"
+key = true
+
+[[models.members]]
+name = "gameId"
+type = "u32"
+key = true
+
+[[models.members]]
+name = "health"
+type = "u16"
+key = false
+
+[[models]]
+kind = "DojoModel"
+class_hash = "0x3af5fdb6b4b424bd5c23c140aa7497b35170db051beb7eb74801698dbca1441"
+original_class_hash = "0x3af5fdb6b4b424bd5c23c140aa7497b35170db051beb7eb74801698dbca1441"
+abi = "manifests/dev/abis/deployments/models/dojo_starter_models_player_player.json"
+name = "dojo_starter::models::player::player"
+
+[[models.members]]
+name = "player"
+type = "ContractAddress"
+key = true
+
+[[models.members]]
+name = "character"
+type = "Character"
+key = false
+
+[[models.members]]
+name = "score"
+type = "u64"
+key = false
+
+[[models]]
+kind = "DojoModel"
+class_hash = "0x11508f0327c6fff90b9242475aa33eca07e653f8c8ce7fc0ea3f516408e7bf7"
+original_class_hash = "0x11508f0327c6fff90b9242475aa33eca07e653f8c8ce7fc0ea3f516408e7bf7"
+abi = "manifests/dev/abis/deployments/models/dojo_starter_models_skill_skill.json"
+name = "dojo_starter::models::skill::skill"
+
+[[models.members]]
+name = "entityId"
+type = "ContractAddress"
+key = true
+
+[[models.members]]
+name = "gameId"
+type = "u32"
+key = true
+
+[[models.members]]
+name = "attack"
+type = "u16"
+key = false
+
+[[models.members]]
+name = "strongAttack"
+type = "u16"
+key = false
+
+[[models.members]]
+name = "healing"
+type = "u16"
+key = false
