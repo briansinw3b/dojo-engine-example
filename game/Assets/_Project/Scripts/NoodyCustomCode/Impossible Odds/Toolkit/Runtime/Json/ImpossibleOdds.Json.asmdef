@@ -1,0 +1,15 @@
+{
+    "name": "ImpossibleOdds.Json",
+    "references": [
+        "ImpossibleOdds.Core",
+        "ImpossibleOdds.Serialization"
+    ],
+    "optionalUnityReferences": [],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": []
+}
